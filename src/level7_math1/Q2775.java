@@ -1,3 +1,5 @@
+package level7_math1;
+
 import java.io.*;
 import java.util.*;
 
