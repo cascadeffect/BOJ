@@ -1,0 +1,12 @@
+import sys
+
+input = sys.stdin.readline
+
+n, m = map(int, input().split())
+
+min_nums = []
+
+for i in range(n):
+  min_nums.append(min(list(map(int, input().split()))))
+
+print(max(min_nums))
