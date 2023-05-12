@@ -6,11 +6,22 @@ n = int(input())
 x, y = 1, 1
 plans = input().split()
 
-dx = [0, 0, -1, 1]
-dy = [-1, 1, 0, 0]
-move_types = ['L', 'R', 'U', 'D']
-
 for plan in plans:
-  pass
+  if plan == 'U':
+    if y == 1:
+      continue
+    y -= 1
+  elif plan == 'D':
+    if y == n:
+      continue
+    y += 1
+  elif plan == 'L':
+    if x == 1:
+      continue
+    x -= 1
+  elif plan == 'R':
+    if x == n:
+      continue
+    x += 1
 
-print(x, y)
+print(y, x)

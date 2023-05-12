@@ -7,7 +7,7 @@ while True:
   if n == 1:
     break
   if n % k == 0:
-    n = n // k
+    n //= k
     count += 1
   else:
     n -= 1
