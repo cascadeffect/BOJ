@@ -1,3 +1,9 @@
+def isBurger(burger):
+    for i in range(3, 0, -1):
+        if i != burger[i-4]:
+            return False
+    return True
+
 def solution(ingredient):
     answer = 0
     burger = []
@@ -11,9 +17,3 @@ def solution(ingredient):
         burger.append(i)
 
     return answer
-
-def isBurger(burger):
-    for i in range(3, 0, -1):
-        if i != burger[i-4]:
-            return False
-    return True
