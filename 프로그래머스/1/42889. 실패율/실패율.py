@@ -11,4 +11,4 @@ def solution(N, stages):
             M -= cnt
         else:
             answer[i] = 0
-    return list(zip(*sorted(answer.items(), key = lambda x : (-x[1], x[0]))))[0]
+    return sorted(answer, key = lambda x : answer[x], reverse=True)
