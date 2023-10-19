@@ -2,7 +2,7 @@ from itertools import permutations
 
 def solution(k, dungeons):
     answer = []
-    for permutation in permutations([i for i in range(len(dungeons))], len(dungeons)):
+    for permutation in permutations(range(len(dungeons))):
         ftg = k
         cnt = 0
         for idx in permutation:
