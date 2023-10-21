@@ -1,0 +1,1 @@
+solution = lambda lottos, win_nums: [min(7-(len(set(lottos)&set(win_nums))+lottos.count(0)), 6), min(7-len(set(lottos)&set(win_nums)), 6)]
