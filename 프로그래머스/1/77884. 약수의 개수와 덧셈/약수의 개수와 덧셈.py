@@ -1,0 +1,1 @@
+solution = lambda left, right : sum(-num if (num ** (1/2)).is_integer() else num for num in range(left, right+1) )
