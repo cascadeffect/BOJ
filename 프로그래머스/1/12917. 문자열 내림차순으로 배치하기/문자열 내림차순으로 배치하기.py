@@ -1,1 +1,1 @@
-solution = lambda s: "".join(chr(n) for n in sorted((ord(c) for c in s), reverse=True))
+solution = lambda s: "".join(sorted(s, reverse=True))
