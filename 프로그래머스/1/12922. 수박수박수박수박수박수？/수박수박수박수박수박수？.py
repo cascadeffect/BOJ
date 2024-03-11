@@ -1,0 +1,1 @@
+solution = lambda n: '수박' * int(n/2) if n%2 == 0 else ('수박' * int((n+1)/2))[:-1]
